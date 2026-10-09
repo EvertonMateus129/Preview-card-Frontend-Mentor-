@@ -21,7 +21,7 @@
 
     <title>Frontend Mentor | Blog preview card</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
     <style>
       :root {
         --yellow-bg-color: hsl(47, 88%, 63%);
@@ -36,16 +36,108 @@
         margin: 0;
         box-sizing: border-box;
       }
+      
+      html {
+        font-size: 62.5%;
+      }
 
       body {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         font-family: "Figtree";
         height: 100vh;
+        background-color: var(--yellow-bg-color);
+      }
+
+      .card-preview-container {
+        background-color: var(--card-bg-color);
+        padding: 2.4rem;
+        width: 38.4rem;
+        border-radius: 12px;
+        box-shadow: 6px 6px;
+        border: 1px solid black;
+      }
+
+      .card-preview-image {
+        margin-bottom: 2.4rem;
+      }
+
+      .card-preview-image img {
+        width: 33.6rem;
+        border-radius: 8px;
+      }
+
+      .card-preview-content {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        
+      }
+
+      .card-preview-content strong {
+        display: inline;
+        color: var(--strong-color);
+        background-color: var(--yellow-bg-color);
+        padding: .4rem 1.2rem;
+        border-radius: .5rem;
+        font-size: 1.4rem;
+        align-self: flex-start;
+        margin-bottom: 1.2rem;
       }
       
+      .card-preview-content span {
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+      }
+
+      .card-preview-content h1 {
+        font-size: 2.4rem;
+        margin-bottom: 1.2rem;
+      }
+
+      .card-preview-content h1:hover {
+        cursor: pointer;
+        color: var(--yellow-bg-color);
+      }
+      .card-preview-content p {
+        font-size: 1.6rem;
+        margin-bottom: 2.4rem;
+        font-weight: 500;
+        color: var(--text-color);
+      }
+
+      .card-preview-author {
+        display: flex;
+        align-items: center;
+
+      }
+
+      .card-preview-author img {
+        width: 3.2rem;
+        margin-right: 1.2rem;
+      }
+
+      .card-preview-author span {
+        font-size: 1.4rem;
+        font-weight: 800;
+      }
+
+      .attribution {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 1.2rem;
+        color: var(--text-color);
+      }
+      
+
+
     </style>
   </head>
   <body>
@@ -65,7 +157,7 @@
 
         <p>
           These languages are the backbone of every website, defining structure,
-          content, and presentation
+          content, and presentation.
         </p>
       </div>
 
